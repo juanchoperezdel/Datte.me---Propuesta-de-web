@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden relative">
       {/* Background gradients */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[600px] bg-gradient-to-b from-indigo-100/50 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
-      
+
       <div className="text-center max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ export const Hero = () => {
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             Automatizá tus turnos, reducí ausencias con recordatorios y multiplicá tus ingresos mientras te enfocás en lo que mejor sabés hacer.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 flex items-center justify-center gap-2 group">
               Agendar demostración
@@ -36,7 +36,7 @@ export const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -48,9 +48,12 @@ export const Hero = () => {
               {/* Top bar */}
               <div className="h-14 border-b border-slate-100 flex items-center px-6 justify-between bg-slate-50/50">
                 <div className="flex items-center gap-4">
-                  <div className="flex items-center gap-2 text-indigo-600 font-bold">
-                    <Calendar className="w-5 h-5" />
-                    ReservaPro
+                  <div className="flex items-center gap-2 text-indigo-600 font-bold text-xl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H6C3.23858 21 1 18.7614 1 16V8C1 5.23858 3.23858 3 6 3Z" fill="currentColor" />
+                      <path d="M7 12L10 15L17 8" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Datte
                   </div>
                   <div className="hidden md:flex items-center gap-4 ml-8 text-sm font-medium text-slate-500">
                     <span className="text-slate-900 bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-100 flex items-center gap-2">
@@ -67,7 +70,7 @@ export const Hero = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Main content area */}
               <div className="p-6 grid grid-cols-1 md:grid-cols-4 gap-6 bg-slate-50/30">
                 {/* Left column */}
@@ -82,7 +85,7 @@ export const Hero = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
                     <h4 className="font-semibold text-slate-900 mb-4">Próximos turnos</h4>
                     <div className="space-y-4">
@@ -121,7 +124,7 @@ export const Hero = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm h-64 flex flex-col">
                     <div className="flex justify-between items-center mb-6">
                       <h4 className="font-semibold text-slate-900">Ingresos Mensuales</h4>
@@ -130,8 +133,8 @@ export const Hero = () => {
                     <div className="flex-1 flex items-end justify-between gap-2">
                       {[40, 60, 45, 80, 65, 90].map((height, i) => (
                         <div key={i} className="w-full bg-indigo-100 rounded-t-md relative group">
-                          <div 
-                            className="absolute bottom-0 w-full bg-indigo-500 rounded-t-md transition-all duration-500 group-hover:bg-indigo-600" 
+                          <div
+                            className="absolute bottom-0 w-full bg-indigo-500 rounded-t-md transition-all duration-500 group-hover:bg-indigo-600"
                             style={{ height: `${height}%` }}
                           ></div>
                         </div>
@@ -177,7 +180,7 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Floating badge */}
             <div className="absolute -right-6 top-1/4 bg-white p-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
