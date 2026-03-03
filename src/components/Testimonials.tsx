@@ -12,7 +12,7 @@ export const Testimonials = () => {
           Lo que dicen los dueños de negocios que ya no coordinan turnos por WhatsApp.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-nowrap overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-8 sm:pb-0 sm:overflow-visible sm:pr-0 pr-4 snap-x snap-mandatory pt-10" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {[
             {
               quote: "Antes perdía 2 horas por día coordinando turnos y respondiendo mensajes por WhatsApp. Ahora mis pacientes reservan solos y casi no tengo ausencias.",
@@ -34,7 +34,7 @@ export const Testimonials = () => {
               avatar: "https://picsum.photos/seed/carolina/100/100"
             }
           ].map((item, i) => (
-            <div key={i} className={`p-10 rounded-[2.5rem] relative transition-all duration-500 ${item.featured ? 'bg-indigo-50 border-2 border-indigo-100 shadow-xl shadow-indigo-100/50 -translate-y-4' : 'bg-slate-50 border border-slate-100 hover:shadow-lg hover:-translate-y-2'}`}>
+            <div key={i} className={`min-w-[300px] md:min-w-0 snap-center p-10 rounded-[2.5rem] relative transition-all duration-500 ${item.featured ? 'bg-indigo-50 border-2 border-indigo-100 shadow-xl shadow-indigo-100/50 md:-translate-y-4' : 'bg-slate-50 border border-slate-100 hover:shadow-lg hover:-translate-y-2'}`}>
               <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full border-4 border-white shadow-lg overflow-hidden">
                 <img src={item.avatar} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>

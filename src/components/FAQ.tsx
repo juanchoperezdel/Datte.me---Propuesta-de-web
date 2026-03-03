@@ -5,23 +5,23 @@ export const FAQ = () => {
   const faqs = [
     {
       q: "¿Necesito instalar algo?",
-      a: "No, funciona desde el navegador y hay app móvil."
+      a: "No, datte.me funciona 100% en la nube desde el navegador de tu celular, tablet o computadora."
     },
     {
       q: "¿Funciona con MercadoPago?",
-      a: "Sí, integración nativa."
+      a: "Sí, cuenta con integración nativa. Podés exigir el pago de una seña parcial o del monto total del turno al momento de reservar."
     },
     {
       q: "¿Qué pasa si cancelo?",
-      a: "Cancelás desde tu panel, sin trámites ni penalidades."
+      a: "No tenés contratos de permanencia. Podés cancelar tu plan en cualquier momento desde tu panel de control, sin preguntas ni letras chicas."
     },
     {
       q: "¿Mis clientes necesitan crear una cuenta para reservar?",
-      a: "No, reservan directo desde tu página."
+      a: "No. Solo hacen clic en tu link, eligen el servicio, seleccionan la fecha y dejan su nombre y WhatsApp. Es el proceso más rápido del mercado."
     },
     {
       q: "¿Es difícil configurar?",
-      a: "La mayoría de negocios está operativo en menos de 10 minutos."
+      a: "Para nada. El panel es súper intuitivo y la mayoría de los negocios dejan su agenda configurada y lista en menos de 10 minutos."
     }
   ];
 

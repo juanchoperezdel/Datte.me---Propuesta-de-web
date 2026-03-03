@@ -23,9 +23,9 @@ export const WhoIsItFor = () => {
                     Si gestionás tiempo y clientes, esta plataforma fue pensada para vos.
                 </p>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div className="flex flex-nowrap overflow-x-auto md:grid md:grid-cols-4 gap-4 md:gap-6 pb-6 sm:pb-0 sm:overflow-visible sm:pr-0 pr-4 snap-x snap-mandatory" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                     {professions.map((prof, i) => (
-                        <div key={i} className="bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-100 hover:border-slate-300 transition-colors group cursor-default">
+                        <div key={i} className="min-w-[140px] md:min-w-0 snap-center bg-slate-50 border border-slate-100 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-100 hover:border-slate-300 transition-colors group cursor-default">
                             <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform">
                                 {prof.icon}
                             </div>

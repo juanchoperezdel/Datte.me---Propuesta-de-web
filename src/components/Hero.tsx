@@ -18,12 +18,11 @@ export const Hero = () => {
             <span className="flex h-2 w-2 rounded-full bg-indigo-500"></span>
             Gestión de turnos sin fricción
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-[1.1]">
-            Terminá con el caos de los turnos. <br className="hidden md:block" />
-            <span className="text-3xl md:text-5xl">Tus clientes reservan solos, vos cobrás y gestionás todo desde un lugar.</span>
+          <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-[1.1]">
+            Terminá con el caos de los turnos.
           </h1>
-          <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            datte.me automatiza tu agenda, reduce ausencias y te conecta con tus clientes por WhatsApp. Sin llamadas, sin papeles, sin dolores de cabeza.
+          <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            datte.me automatiza tu agenda, reduce ausencias y atiende a tus clientes por WhatsApp. Sin llamadas, sin papeles, sin dolores de cabeza.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-3">
@@ -43,11 +42,11 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-20 relative mx-auto max-w-5xl"
+          className="mt-16 md:mt-20 relative mx-auto max-w-5xl px-2 sm:px-0"
         >
           {/* Dashboard Mockup */}
-          <div className="rounded-3xl border border-slate-200/60 bg-white/50 p-3 shadow-2xl shadow-indigo-900/10 backdrop-blur-sm">
-            <div className="rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm">
+          <div className="rounded-2xl md:rounded-3xl border border-slate-200/60 bg-white/50 p-2 md:p-3 shadow-2xl shadow-indigo-900/10 backdrop-blur-sm overflow-x-auto sm:overflow-visible">
+            <div className="rounded-xl md:rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm min-w-[800px] sm:min-w-0">
               {/* Top bar */}
               <div className="h-14 border-b border-slate-100 flex items-center px-6 justify-between bg-slate-50/50">
                 <div className="flex items-center gap-4">
@@ -184,8 +183,8 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute -right-6 top-1/4 bg-white p-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
+            {/* Floating badge (hidden on mobile to save space) */}
+            <div className="hidden md:flex absolute -right-6 top-1/4 bg-white p-3 rounded-2xl shadow-xl border border-slate-100 items-center gap-3 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600" />
               </div>
@@ -198,15 +197,15 @@ export const Hero = () => {
         </motion.div>
 
         {/* Logos */}
-        <div className="mt-24 border-t border-slate-100 pt-10">
-          <p className="text-sm font-medium text-slate-500 mb-6 uppercase tracking-wider">Confiado por más de 500+ negocios y 50,000+ clientes</p>
+        <div className="mt-16 md:mt-24 border-t border-slate-100 pt-10">
+          <p className="text-sm font-medium text-slate-500 mb-6 uppercase tracking-wider">La herramienta perfecta para</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale">
             {['Peluquerías', 'Odontólogos', 'Psicólogos', 'Estéticas', 'Gimnasios'].map((text, i) => (
               <div key={i} className="text-xl font-bold text-slate-800 font-serif italic">{text}</div>
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };

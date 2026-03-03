@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { LogosBand } from './components/LogosBand';
-import { SocialProof } from './components/SocialProof';
 import { BeforeAndAfter } from './components/BeforeAndAfter';
 import { Features } from './components/Features';
 import { DedicatedPage } from './components/DedicatedPage';
@@ -21,7 +20,6 @@ export default function App() {
       <main>
         <Hero />
         <LogosBand />
-        <SocialProof />
         <BeforeAndAfter />
         <Features />
         <DedicatedPage />
