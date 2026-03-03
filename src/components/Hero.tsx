@@ -19,20 +19,23 @@ export const Hero = () => {
             Gestión de turnos sin fricción
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-[1.1]">
-            Conectamos tu negocio con <br className="hidden md:block" />
-            tus clientes <span className="font-serif italic font-normal text-indigo-600">¡En cualquier momento!</span>
+            Terminá con el caos de los turnos. <br className="hidden md:block" />
+            <span className="text-3xl md:text-5xl">Tus clientes reservan solos, vos cobrás y gestionás todo desde un lugar.</span>
           </h1>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Automatizá tus turnos, reducí ausencias con recordatorios y multiplicá tus ingresos mientras te enfocás en lo que mejor sabés hacer.
+            datte.me automatiza tu agenda, reduce ausencias y te conecta con tus clientes por WhatsApp. Sin llamadas, sin papeles, sin dolores de cabeza.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 flex items-center justify-center gap-2 group">
-              Agendar demostración
-            </button>
-            <button className="w-full sm:w-auto px-8 py-4 bg-white text-indigo-600 border border-indigo-100 rounded-full text-lg font-semibold hover:bg-indigo-50 transition-all flex items-center justify-center gap-2">
-              Empezar gratis
-            </button>
+          <div className="flex flex-col items-center justify-center gap-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 flex items-center justify-center gap-2 group">
+                Comenzar gratis
+              </button>
+              <button className="w-full sm:w-auto px-8 py-4 bg-white text-indigo-600 border border-indigo-100 rounded-full text-lg font-semibold hover:bg-indigo-50 transition-all flex items-center justify-center gap-2">
+                Agendar demostración
+              </button>
+            </div>
+            <p className="text-sm text-slate-500 font-medium">15 días gratis · Sin tarjeta · Cancelás cuando querés</p>
           </div>
         </motion.div>
 

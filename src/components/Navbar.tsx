@@ -20,8 +20,7 @@ export const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#beneficios" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Beneficios</a>
-            <a href="#como-funciona" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Cómo funciona</a>
+            <a href="#caracteristicas" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Características</a>
             <a href="#precios" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Precios</a>
             <a href="#faq" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">FAQ</a>
           </div>
@@ -30,8 +29,8 @@ export const Navbar = () => {
             <button className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
               Iniciar sesión
             </button>
-            <button className="bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-indigo-700 transition-colors shadow-sm shadow-indigo-200">
-              Empezar gratis
+            <button className="bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-indigo-700 transition-colors shadow-sm shadow-indigo-200">
+              Comenzar gratis
             </button>
           </div>
 
@@ -50,15 +49,15 @@ export const Navbar = () => {
             className="md:hidden bg-white border-b border-slate-100"
           >
             <div className="px-4 pt-2 pb-4 space-y-1">
-              <a href="#beneficios" className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md">Beneficios</a>
-              <a href="#como-funciona" className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md">Cómo funciona</a>
+              <a href="#caracteristicas" className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md">Características</a>
               <a href="#precios" className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md">Precios</a>
+              <a href="#faq" className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md">FAQ</a>
               <div className="pt-4 flex flex-col gap-2">
                 <button className="w-full text-center px-4 py-2 border border-slate-200 rounded-full text-base font-medium text-slate-700 hover:bg-slate-50">
                   Iniciar sesión
                 </button>
-                <button className="w-full text-center px-4 py-2 bg-indigo-600 rounded-full text-base font-medium text-white hover:bg-indigo-700">
-                  Empezar gratis
+                <button className="w-full text-center px-4 py-2 bg-indigo-600 rounded-full text-base font-bold text-white hover:bg-indigo-700">
+                  Comenzar gratis
                 </button>
               </div>
             </div>

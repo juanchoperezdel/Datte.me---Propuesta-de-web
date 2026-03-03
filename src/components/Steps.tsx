@@ -14,38 +14,31 @@ export const Steps = () => {
 
         <div className="relative">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-1 bg-slate-200 -translate-y-1/2 rounded-full">
+          <div className="hidden md:block absolute top-1/2 left-[15%] right-[15%] h-1 bg-slate-200 -translate-y-1/2 rounded-full">
             <div className="absolute top-0 left-0 h-full bg-indigo-600 w-1/3 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
             {[
               {
                 step: "1",
-                title: "Encontrá tu profesional",
-                desc: "Los clientes buscan por especialidad, ubicación o disponibilidad.",
+                title: "Registrate en segundos",
+                desc: "Creá tu cuenta gratis y accedé a tu panel de control.",
                 icon: <Search className="w-6 h-6 text-indigo-600" />,
                 active: true
               },
               {
                 step: "2",
-                title: "Reservá tu turno rápido",
-                desc: "Reserva online rápida con horarios flexibles.",
+                title: "Configurá tu agenda",
+                desc: "Definí tus servicios, precios y horarios de atención.",
                 icon: <Calendar className="w-6 h-6 text-slate-400" />,
                 active: false
               },
               {
                 step: "3",
-                title: "Confirmación del negocio",
-                desc: "Los profesionales revisan y aprueban los turnos al instante.",
+                title: "Tus clientes reservan",
+                desc: "Compartí tu link y empezá a recibir reservas automáticamente.",
                 icon: <CheckCircle2 className="w-6 h-6 text-slate-400" />,
-                active: false
-              },
-              {
-                step: "4",
-                title: "Asistí a tu turno",
-                desc: "Atención presencial o mediante videollamada segura.",
-                icon: <Video className="w-6 h-6 text-slate-400" />,
                 active: false
               }
             ].map((item, i) => (
@@ -56,7 +49,7 @@ export const Steps = () => {
                   </div>
                   {item.active ? React.cloneElement(item.icon, { className: 'w-8 h-8 text-white' }) : item.icon}
                 </div>
-                
+
                 {/* Mockup card for step */}
                 <div className={`w-full max-w-[240px] bg-white rounded-2xl p-5 shadow-lg mb-6 transition-all duration-500 ${item.active ? 'border-2 border-indigo-100 -translate-y-2' : 'border border-slate-100 opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100'}`}>
                   <div className="w-12 h-12 bg-slate-100 rounded-full mx-auto mb-4 overflow-hidden">
@@ -66,7 +59,7 @@ export const Steps = () => {
                   <div className="h-2 w-32 bg-slate-100 rounded mx-auto"></div>
                   {item.active && (
                     <div className="mt-4 bg-indigo-50 text-indigo-700 text-xs font-bold py-2 px-4 rounded-full">
-                      Agendar Turno
+                      Panel Activo
                     </div>
                   )}
                 </div>

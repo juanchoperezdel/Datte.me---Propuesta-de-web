@@ -1,7 +1,12 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { LogosBand } from './components/LogosBand';
+import { SocialProof } from './components/SocialProof';
+import { BeforeAndAfter } from './components/BeforeAndAfter';
 import { Features } from './components/Features';
+import { DedicatedPage } from './components/DedicatedPage';
+import { WhoIsItFor } from './components/WhoIsItFor';
 import { Steps } from './components/Steps';
 import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
@@ -15,7 +20,12 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <LogosBand />
+        <SocialProof />
+        <BeforeAndAfter />
         <Features />
+        <DedicatedPage />
+        <WhoIsItFor />
         <Steps />
         <Testimonials />
         <Pricing />
