@@ -20,10 +20,10 @@ export default function App() {
       <main>
         <Hero />
         <LogosBand />
+        <WhoIsItFor />
         <BeforeAndAfter />
         <Features />
         <DedicatedPage />
-        <WhoIsItFor />
         <Steps />
         <Testimonials />
         <Pricing />
